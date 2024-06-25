@@ -4,11 +4,11 @@ const result = document.getElementById('result');
 
 const checkPalindrome = () => {
   const regex = /[\W_]/gi;
-  let userInput = textInput.value.replace(regex, "").toLowerCase();
-  let userInputReverse = userInput.split("").reverse().join("").toLowerCase();
+  let userInput = textInput.value.replace(regex, '').toLowerCase();
+  let userInputReverse = userInput.split('').reverse().join('').toLowerCase();
 
-  if (userInput === "") {
-    alert("Please input a value");
+  if (userInput === '') {
+    alert('Please input a value');
     return null;
   }
 
@@ -24,4 +24,4 @@ const checkPalindrome = () => {
 }
 
 checkBtn.addEventListener("click", checkPalindrome);
-textInput.addEventListener("keyup", e => e.key == "Enter" ? checkPalindrome() : null);
+textInput.addEventListener('keyup', e => e.key == 'Enter' ? checkPalindrome() : null);
