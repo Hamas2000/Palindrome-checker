@@ -88,6 +88,7 @@ button {
     width: 80%;
     margin-right: 11.5%;
   }
+}
 
 @media screen and (max-width: 500px) {
   #palindrome-container {
