@@ -18,7 +18,7 @@ const checkPalindrome = () => {
     result.innerHTML = `<b>${textInput.value}</b> is not a palindrome`;
   }
 
-  return null; 
+  return null;
 };
 
 checkBtn.addEventListener('click', checkPalindrome);
