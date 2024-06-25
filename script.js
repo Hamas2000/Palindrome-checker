@@ -4,8 +4,8 @@ const result = document.getElementById('result');
 
 const checkPalindrome = () => {
   const regex = /[\W_]/gi;
-  let userInput = textInput.value.replace(regex, '').toLowerCase();
-  let userInputReverse = userInput.split('').reverse().join('').toLowerCase();
+  const userInput = textInput.value.replace(regex, '').toLowerCase();
+  const userInputReverse = userInput.split('').reverse().join('').toLowerCase();
 
   if (userInput === '') {
     alert('Please input a value');
@@ -17,11 +17,9 @@ const checkPalindrome = () => {
   } else {
     result.innerHTML = `<b>${textInput.value}</b> is not a palindrome`;
   }
-  
-  // For debugging purposes
-  console.log(userInput);
-  console.log(userInputReverse);
-}
 
-checkBtn.addEventListener("click", checkPalindrome);
-textInput.addEventListener('keyup', e => e.key == 'Enter' ? checkPalindrome() : null);
+  return null; 
+};
+
+checkBtn.addEventListener('click', checkPalindrome);
+textInput.addEventListener('keyup', (e) => (e.key === 'Enter' ? checkPalindrome() : null));
