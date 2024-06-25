@@ -1,8 +1,8 @@
-let textInput = document.getElementById("text-input");
-let checkBtn = document.getElementById("check-btn");
-let result = document.getElementById("result");
+const textInput = document.getElementById('text-input');
+const checkBtn = document.getElementById('check-btn');
+const result = document.getElementById('result');
 
-let checkPalindrome = () => {
+const checkPalindrome = () => {
   const regex = /[\W_]/gi;
   let userInput = textInput.value.replace(regex, "").toLowerCase();
   let userInputReverse = userInput.split("").reverse().join("").toLowerCase();

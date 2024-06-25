@@ -60,7 +60,7 @@ button {
 #result {
   margin-top: 20px;
   margin-bottom: 15px;
-  font-size: 20pxc;
+  font-size: 20px;
 }
 
 #palindrome-definition {
@@ -78,36 +78,21 @@ button {
 
 @media screen and (max-width: 500px) {
   #palindrome-container {
-      width: 80%;
-      margin-left: 8.5%;
-      margin-right: auto;
-      margin-top: 30%;
+    width: 80%;
+    margin-left: 8.5%;
+    margin-right: auto;
+    margin-top: 30%;
   }
 
   #palindrome-definition {
-      width: 80%;
-      margin-right: 11.5%;
+    width: 80%;
+    margin-right: 11.5%;
   }
 }* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-:root {
-  --border-button-colors: #5a01a7;
-}
-
-body {
-  background-color: #0a0a23;
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 label {
