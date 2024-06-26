@@ -103,3 +103,23 @@ button {
     margin-right: 11.5%;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #palindrome-container {
+    width: 70%;
+    margin-top: 10%;
+  }
+
+  #palindrome-definition {
+    width: 70%;
+    margin-top: 5%;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 100px;
+  }
+}
